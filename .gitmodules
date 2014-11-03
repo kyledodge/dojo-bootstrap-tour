@@ -6,3 +6,11 @@
 	path = Dojo-Bootstrap
 	url = https://github.com/xsokev/Dojo-Bootstrap.git
 	branch = master
+[submodule "demo/Dojo-Bootstrap"]
+	path = demo/Dojo-Bootstrap
+	url = https://github.com/xsokev/Dojo-Bootstrap.git
+	branch = master
+[submodule "demo/dojo"]
+	path = demo/dojo
+	url = https://github.com/dojo/dojo.git
+	branch = 1.9
