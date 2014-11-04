@@ -32,8 +32,8 @@ define([ 'dojo-bootstrap-tour/Tour', 'dojo/domReady!' ], function (Tour) {
 	    ]
 	});
 
-	app.tour.init();
-	app.tour.start();
+	tour.init();
+	tour.start();
 
 });
 ```
