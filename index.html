@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dojo Bootstrap Tour</title>
+	<link rel="stylesheet" href="app/resources/app.css">
+	<link rel="stylesheet" href="bootstrap-tour/tour.css">
+</head>
+<body class="claro">
+	<script>
+		var dojoConfig = {
+			async: true,
+			baseUrl: '.',
+			isDebug: false,
+			packages: [
+				'app',
+				'dojo'
+			],
+			tlmSiblingOfDojo: false
+		};
+	</script>
+	<script src="dojo/dojo.js"></script>
+	<script>require([ 'app/main' ]);</script>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1 id="step1">Welcome to the Tour!</h1>
+			<p>This page demonstrates a tour using Dojo Bootstrap Tour. Click the "Start Tour" button below to begin!</p>
+			<p>
+				<a href="#" id="tourStartBtn" class="btn btn-large btn-danger">Start The Tour</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4" id="step2">
+				<h3>Why Another Tour Library?</h3>
+				<p>
+					I had a need to have the features of Bootstrap Tour without using jQuery. The idea was to replace jQuery with Dojo and convert to an AMD module.
+				</p>
+			</div>
+			<div class="col-md-4" id="step3">
+				<h3>Something Doesn't Work Right!</h3>
+				<p>
+					Yeah, there are things that still are a work in progress. If you see something wrong, I would appreciate if you created an issue. Pull requests are always welcome too!
+				</p>
+			</div>
+			<div class="col-md-4" id="step4">
+				<h3>Credits</h3>
+				<p>
+					Big thanks to the original work of <a href='https://github.com/sorich87/bootstrap-tour'>Bootstrap Tour by sorich87</a>
+					which this is based upon.
+				</p>
+				<p>
+					Bootstrap without jQuery wouldn't be possible without <a href='https://github.com/xsokev/Dojo-Bootstrap'>Dojo Bootstrap by xsokev</a>
+					as well!
+					Bootstrap theme was provided by <a href='http://www.bootswatch.com'>Bootswatch</a>
+				</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+</body>
+</html>
