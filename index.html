@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<title>Dojo Bootstrap Tour</title>
+	<link rel="stylesheet" href="app/resources/app.css">
+	<link rel="stylesheet" href="bootstrap-tour/tour.css">
+</head>
+<body class="claro">
+	<script>
+		var dojoConfig = {
+			async: true,
+			baseUrl: '.',
+			isDebug: false,
+			packages: [
+				'app',
+				'dojo'
+			],
+			tlmSiblingOfDojo: false
+		};
+	</script>
+	<script src="dojo/dojo.js"></script>
+	<script>require([ 'app/main' ]);</script>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Dojo Bootstrap Tour : Application Tours using Dojo and Bootstrap, without jQuery">
+	<div class="jumbotron">
+		<div class="container">
+			<h1 id="step1">Welcome to the Tour!</h1>
+			<p>This page demonstrates a tour using Dojo Bootstrap Tour. Click the "Start Tour" button below to begin!</p>
+			<p>
+				<a href="#" id="tourStartBtn" class="btn btn-large btn-danger">Start The Tour</a>
+			</p>
+		</div>
+	</div>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Dojo Bootstrap Tour</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/kyledodge/dojo-bootstrap-tour">View on GitHub</a>
-
-          <h1 id="project_title">Dojo Bootstrap Tour</h1>
-          <h2 id="project_tagline">Application Tours using Dojo and Bootstrap, without jQuery</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/kyledodge/dojo-bootstrap-tour/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/kyledodge/dojo-bootstrap-tour/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="tour" class="anchor" href="#tour" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tour</h3>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Dojo Bootstrap Tour maintained by <a href="https://github.com/kyledodge">kyledodge</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4" id="step2">
+				<h3>Why Another Tour Library?</h3>
+				<p>
+					I had a need to have the features of Bootstrap Tour without using jQuery. The idea was to replace jQuery with Dojo and convert to an AMD module.
+				</p>
+			</div>
+			<div class="col-md-4" id="step3">
+				<h3>Something Doesn't Work Right!</h3>
+				<p>
+					Yeah, there are things that still are a work in progress. If you see something wrong, I would appreciate if you created an issue. Pull requests are always welcome too!
+				</p>
+			</div>
+			<div class="col-md-4" id="step4">
+				<h3>Credits</h3>
+				<p>
+					Big thanks to the original work of <a href='https://github.com/sorich87/bootstrap-tour'>Bootstrap Tour by sorich87</a>
+					which this is based upon.
+				</p>
+				<p>
+					Bootstrap without jQuery wouldn't be possible without <a href='https://github.com/xsokev/Dojo-Bootstrap'>Dojo Bootstrap by xsokev</a>
+					as well!
+					Bootstrap theme was provided by <a href='http://www.bootswatch.com'>Bootswatch</a>
+				</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+</body>
 </html>
